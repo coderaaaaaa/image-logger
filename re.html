@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            width: 300px; 
+            height: auto;
+            border: 2px solid #888888;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="image.jpg" alt="Image" />
+    <p class="message">You will be redirected shortly...</p>
+</div>
+
+<script>
+    setTimeout(function() {
+        window.location.href = "https://www.example.com"; // Replace with your target URL
+    }, 3000);
+</script>
+
+</body>
+</html>
